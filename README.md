@@ -3,8 +3,7 @@
 Install Java:
 sudo yum install java-1.8.0
 
-Get Kafka:
-wget https://archive.apache.org/dist/kafka/2.2.1/kafka_2.12-2.2.1.tgz
+Get Kafka:wget https://archive.apache.org/dist/kafka/2.2.1/kafka_2.12-2.2.1.tgz
 
 Extract Kafka:
 tar -xzf kafka_2.12-2.2.1.tgz
