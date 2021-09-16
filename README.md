@@ -9,7 +9,9 @@ Extract Kafka:
 tar -xzf kafka_2.12-2.2.1.tgz
 
 Get Cluster ARN:
-aws kafka describe-cluster --cluster-arn "ClusterArn" --region 
+aws kafka describe-cluster --region us-east-1 --cluster-arn "ClusterArn"
+aws kafka describe-cluster --region us-east-1 --cluster-arn arn:aws:kafka:us-east-2:159363735810:cluster/test-cluster-1/cc80ac7c-3edf-4c6d-95c7-bce68fd48023-7
+
 
 Create Topic:
 bin/kafka-topics.sh --create --zookeeper "ZookeeperConnectString" --replication-factor 2 --partitions 1 --topic AWSKafkaTutorialTopic
